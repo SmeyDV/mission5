@@ -10,11 +10,11 @@ const products = [
   },
   {
     id: 2,
-    image: "pic/productpage/Bead_Bracelet2.webp",
-    title: "Colorful Bead Bracelet",
+    image: "pic/productpage/Ceramic_Vase.webp",
+    title: "Decorative Ceramic Vase",
     description: "Cambodian Handmade Craft",
-    price: 30.0,
-    category: "jewelry",
+    price: 45.0,
+    category: "ceramic",
   },
   {
     id: 3,
@@ -34,11 +34,11 @@ const products = [
   },
   {
     id: 5,
-    image: "pic/productpage/Ceramic_Vase.webp",
-    title: "Decorative Ceramic Vase",
+    image: "pic/productpage/Bead_Bracelet2.webp",
+    title: "Colorful Bead Bracelet",
     description: "Cambodian Handmade Craft",
-    price: 45.0,
-    category: "ceramic",
+    price: 30.0,
+    category: "jewelry",
   },
   {
     id: 6,
@@ -230,7 +230,7 @@ const products = [
     title: "Classic Budha Sculpture",
     description: "Cambodian Handmade Craft",
     price: 320.0,
-    category: "woodencarving",
+    category: "wooden carving",
   },
   {
     id: 30,
@@ -238,7 +238,7 @@ const products = [
     title: "Elegant Budha Sculpture",
     description: "Cambodian Handmade Craft",
     price: 340.0,
-    category: "woodencarving",
+    category: "wooden carving",
   },
   {
     id: 31,
@@ -246,7 +246,7 @@ const products = [
     title: "Modern Budha Sculpture",
     description: "Cambodian Handmade Craft",
     price: 360.0,
-    category: "woodencarving",
+    category: "wooden carving",
   },
   {
     id: 32,
@@ -254,7 +254,7 @@ const products = [
     title: "Decorative Budha Sculpture",
     description: "Cambodian Handmade Craft",
     price: 380.0,
-    category: "woodencarving",
+    category: "wooden carving",
   },
   {
     id: 33,
@@ -291,20 +291,20 @@ const products = [
 ];
 
 const addToCart = (productId) => {
-    const product = products.find((p) => p.id === productId);
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart.push(product);
-    localStorage.setItem("cart", JSON.stringify(cart));
-    updateCartCount();
-    
-    // Add animation class to cart icon
-    const cartIcon = document.getElementById('cart-icon');
-    cartIcon.classList.add('shake');
+  const product = products.find((p) => p.id === productId);
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.push(product);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  updateCartCount();
 
-    // Remove the animation class after the animation ends
-    setTimeout(() => {
-        cartIcon.classList.remove('shake');
-    }, 500); // Duration should match the CSS animation duration
+  // Add animation class to cart icon
+  const cartIcon = document.getElementById("cart-icon");
+  cartIcon.classList.add("shake");
+
+  // Remove the animation class after the animation ends
+  setTimeout(() => {
+    cartIcon.classList.remove("shake");
+  }, 500); // Duration should match the CSS animation duration
 };
 
 const updateCartCount = () => {

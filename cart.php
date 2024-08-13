@@ -78,14 +78,27 @@
         text-align: center;
         margin-top: 20px;
       }
+      .quantity-control {
+        display: flex;
+        align-items: center;
+      }
+      .quantity-control .btn-secondary {
+        margin: 0 5px;
+      }
+      .quantity-input {
+        width: 50px;
+        text-align: center;
+        border: none;
+        background-color: #f8f9fa;
+      }
     </style>
   </head>
   <body>
     <!-- navbar -->
     <?php
     $navbarClass = ''; // No additional classes for navbar
-    $searchBoxClass = false; // Custom class for search box
-    $showLoginDropdown = false; // Show login dropdown
+    $searchBoxClass = false; // No search box in the cart page
+    $showLoginDropdown = false; // No login dropdown in the cart page
     include 'components/navbar.php';
     ?>
 
@@ -110,4 +123,3 @@
     <script src="js/cart.js"></script>
   </body>
 </html>
-

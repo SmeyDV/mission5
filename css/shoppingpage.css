@@ -1,0 +1,81 @@
+.col-6>a {
+display: block;
+}
+
+#shop-btn {
+background-color: #ff8100;
+}
+
+#card-width {
+width: 18rem;
+}
+
+.filter-bar {
+padding: 10px;
+background-color: #f8f9fa;
+border-radius: 5px;
+margin-bottom: 20px;
+}
+
+.filter-section {
+margin-bottom: 20px;
+}
+
+.filter-section h5 {
+margin-bottom: 10px;
+font-size: 20px;
+font-weight: bold;
+}
+
+.filter-section label {
+display: flex;
+align-items: center;
+margin-bottom: 5px;
+font-size: 16px;
+}
+
+.filter-section label input {
+margin-right: 10px;
+vertical-align: middle;
+}
+
+.product-image {
+object-fit: contain;
+border-radius: 5px;
+transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+transform: scale(1.05);
+}
+
+@keyframes shake {
+
+0%,
+100% {
+transform: translateX(0);
+}
+
+25% {
+transform: translateX(-5px);
+}
+
+50% {
+transform: translateX(5px);
+}
+
+75% {
+transform: translateX(-5px);
+}
+}
+
+#cart-icon.shake {
+animation: shake 0.5s;
+}
+
+
+.pagination-container {
+margin-top: 30px;
+margin-bottom: 30px;
+
+}
