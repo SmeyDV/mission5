@@ -3,36 +3,41 @@ const displayCartItems = () => {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
   const cartItemsContainer = document.getElementById("cart-items");
   const emptyCartMessage = document.getElementById("empty-cart-message");
-  const checkoutButtonContainer = document.querySelector(".checkout-button-container");
+  const checkoutButtonContainer = document.querySelector(
+    ".checkout-button-container"
+  );
 
   cartItemsContainer.innerHTML = "";
 
   let totalPrice = 0;
-
   if (cart.length === 0) {
-    emptyCartMessage.style.display = 'block';
-    checkoutButtonContainer.style.display = 'none';
+    emptyCartMessage.style.display = "block";
+    checkoutButtonContainer.style.display = "none";
   } else {
-    emptyCartMessage.style.display = 'none';
-    checkoutButtonContainer.style.display = 'flex';
+    emptyCartMessage.style.display = "none";
+    checkoutButtonContainer.style.display = "flex";
 
     cart.forEach((item, index) => {
       // Ensure quantity is a number and default to 1 if not set
       const itemQuantity = Number(item.quantity) || 1;
       const itemTotalPrice = item.price * itemQuantity;
-      
+
       const itemHTML = `
         <div class="cart-item card mb-3">
           <div class="row g-0">
             <div class="col-md-4">
-              <img src="${item.image}" class="img-fluid rounded-start" alt="${item.title}">
+              <img src="${item.image}" class="img-fluid rounded-start" alt="${
+        item.title
+      }">
             </div>
             <div class="col-md-8">
               <div class="card-body d-flex justify-content-between align-items-center">
                 <div>
                   <h5 class="card-title">${item.title}</h5>
                   <p class="card-text">${item.description}</p>
-                  <p class="card-text"><small class="text-muted">$${item.price.toFixed(2)}</small></p>
+                  <p class="card-text"><small class="text-muted">$${item.price.toFixed(
+                    2
+                  )}</small></p>
                   <div class="quantity-control">
                     <button class="btn btn-sm btn-secondary" onclick="decreaseQuantity(${index})">-</button>
                     <input type="number" value="${itemQuantity}" min="1" readonly class="quantity-input">

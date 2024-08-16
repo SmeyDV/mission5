@@ -1,8 +1,8 @@
  <!-- Footer -->
- <footer class="py-5" data-aos="fade-up">
+ <footer class="py-5" >
       <div class="container">
         <div class="row">
-          <div class="col-md-3 mb-4" data-aos="fade-up">
+          <div class="col-md-3 mb-4" >
             <h3>About Us</h3>
             <p>
               We are dedicated to providing high-quality Cambodian handcrafts
@@ -10,7 +10,7 @@
               practices.
             </p>
           </div>
-          <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-3 mb-4" >
             <h3>Quick Links</h3>
             <ul class="list-unstyled">
               <li><a href="index.php">Home</a></li>
@@ -19,7 +19,7 @@
               <li><a href="contact.php">Contact</a></li>
             </ul>
           </div>
-          <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-3 mb-4" >
             <h3>Follow Us</h3>
             <div class="social-icons">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -27,7 +27,7 @@
               <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
           </div>
-          <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-md-3 mb-4">
             <h3>Contact Us</h3>
             <p>Email: lohak@example.com</p>
             <p>Phone: +855 12 345 678</p>
