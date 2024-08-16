@@ -35,6 +35,7 @@
             <label><input type="checkbox" class="filter" data-filter="silk" /> Silk</label><br />
             <label><input type="checkbox" class="filter" data-filter="wooden carving" /> Wooden Carving</label><br />
             <label><input type="checkbox" class="filter" data-filter="ceramic" /> Ceramic</label>
+            
           </div>
           <div class="filter-section">
             <h5>Price</h5>

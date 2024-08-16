@@ -16,9 +16,9 @@
 <body>
   <!-- Navbar -->
   <?php
-  $navbarClass = ''; // No additional classes for navbar
-  $searchBoxClass = 'custom-search-class'; // Custom class for search box
-  $showLoginDropdown = false; // Show login dropdown
+  $navbarClass = ''; 
+  $searchBoxClass = false; 
+  $showLoginDropdown = false; 
   include 'components/navbar.php';
   ?>
 

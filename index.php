@@ -92,7 +92,7 @@
             between skilled artisans and global consumers, ensuring fair trade
             practices and preserving Cambodia's rich cultural heritage.
           </p>
-          <a href="aboutpage.html" class="btn btn-outline-primary">Learn More</a>
+          <a href="aboutpage.php" class="btn btn-outline-primary">Learn More</a>
         </div>
         <div class="col-lg-6" data-aos="zoom-in">
           <img
@@ -126,7 +126,7 @@
               <p class="card-text">
                 Exquisite silk scarf with traditional Khmer patterns.
               </p>
-              <a href="#" class="btn btn-primary">View Details</a>
+              <a href="shoppingpage.php" class="btn btn-primary">View Details</a>
             </div>
           </div>
         </div>
@@ -144,7 +144,7 @@
               <p class="card-text">
                 Intricately carved wooden box inspired by Angkor Wat.
               </p>
-              <a href="#" class="btn btn-primary">View Details</a>
+              <a href="shoppingpage.php" class="btn btn-primary">View Details</a>
             </div>
           </div>
         </div>
@@ -163,7 +163,7 @@
                 Delicate showcasing traditional art painting of the seven
                 wonder of the world.
               </p>
-              <a href="#" class="btn btn-primary">View Details</a>
+              <a href="shoppingpage.php" class="btn btn-primary">View Details</a>
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@
 
   <!-- Blog-->
   <section class="part3">
-    <div class="part3-content container" data-aos="fade-up">
+    <div class="part3-content container" data-aos="zoom-in">
       <h1>Our Blog</h1>
       <hr />
       <div class="row part3-content-pic">
